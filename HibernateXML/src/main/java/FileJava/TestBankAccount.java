@@ -16,7 +16,7 @@ class BankAccount{
 		return balance;
 	}
 	
-	public synchronized int withdraw(int w) {
+	public static synchronized int withdraw(int w) {
 		int b=getBalance();
 		if(w<=b) {
 			balance=balance-w;
